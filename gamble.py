@@ -20,6 +20,7 @@ def result():
                 money = money - 500
                 print('你输了，还剩{}'.format(money))
 def dice():
+    result = random.randrange(1,7)
     return result
 
 def rand():
