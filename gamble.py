@@ -9,16 +9,16 @@ def result():
         #print('gresult',gresult)
         #print(type(gresult))
         #print(type(gamble))
-        if money <= 0:
-            print('钱不够了！')
-            break
+        if gamble == gresult :
+            money = money + 1000
+            print('你赢了，还剩{}'.format(money))
         else:
-            if gamble == gresult :
-                money = money + 1000
-                print('你赢了，还剩{}'.format(money))
-            else:
-                money = money - 500
-                print('你输了，还剩{}'.format(money))
+            money = money - 500
+            print('你输了，还剩{}'.format(money))
+            if money <= 0:
+                print('钱不够了！')
+                break
+
 def dice():
     result = random.randrange(1,7)
     return result
