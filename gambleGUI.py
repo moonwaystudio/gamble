@@ -21,7 +21,7 @@ def big():
         var.set(remain)
     else:
         #print(22222)
-        money = money - 1000
+        money = money - 500
         remain = '你输了，还剩'+str(money)
         var.set(remain)
         if money <= 0:
